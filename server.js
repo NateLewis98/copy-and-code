@@ -48,14 +48,7 @@ app.post("/send-form", async (req, res) => {
     res.redirect("/thank-you.html");
   } catch (error) {
     console.error("Email error:", error);
-    res.status(500).send(
-      `Error: ${error.message}\n\n` +
-      `SMTP Host: ${process.env.SMTP_HOST}\n` +
-      `SMTP Port: ${process.env.SMTP_PORT}\n` +
-      `EMAIL_USER set: ${!!process.env.EMAIL_USER}\n` +
-      `EMAIL_PASS set: ${!!process.env.EMAIL_PASS}\n` +
-      `EMAIL_TO: ${process.env.EMAIL_TO}`
-    );
+    res.status(500).send("Sorry, something went wrong. Please try again or contact us directly.");
   }
 });
 
