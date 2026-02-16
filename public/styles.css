@@ -1,4 +1,5 @@
 body {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
     background-color: aliceblue;
     min-height: 100vh;
     max-width: 760px;
@@ -39,15 +40,16 @@ header {text-align: center;
     border-radius: 12px;
     color: #f7e4b3;
     box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4);
-
-
 }
-
+h1 {
+    font-size: 45px;
+}
 main {
     background-color: rgb(252, 251, 249);
     padding: 5px 10px;
     border-radius: 12px;
     box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4);
+    font-size: 1.2rem;
 }
 
 /* Contact form */
