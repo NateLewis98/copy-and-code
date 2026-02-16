@@ -1,0 +1,130 @@
+body {
+    background-color: aliceblue;
+    min-height: 100vh;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.06) 0px,
+        rgba(0, 0, 0, 0.06) 1px,
+        transparent 1px,
+        transparent 3px
+    ),
+    repeating-linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.06) 0px,
+        rgba(0, 0, 0, 0.06) 1px,
+        transparent 1px,
+        transparent 3px
+    );
+}
+
+header {text-align: center;
+    background: linear-gradient(135deg, #263341, #5483e9);
+    color: #f7e4b3;
+    padding: 40px 30px;
+    border-radius: 12px;
+
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4);}
+
+    footer {
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #0d0d0e;
+    text-align: center;
+    font-size: 1.25rem;
+    background: linear-gradient(135deg, #263341, #5483e9);
+    border-radius: 12px;
+    color: #f7e4b3;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4);
+
+
+}
+
+main {
+    background-color: rgb(252, 251, 249);
+    padding: 5px 10px;
+    border-radius: 12px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Contact form */
+#contact-form {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+#contact-form h2 {
+    text-align: center;
+    color: #263341;
+    margin-bottom: 16px;
+}
+
+.form-row {
+    display: flex;
+    gap: 16px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+    flex: 1;
+}
+
+.form-field label {
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: #263341;
+}
+
+.form-field input,
+.form-field textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #b0b8c4;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    border-color: #5483e9;
+    box-shadow: 0 0 0 3px rgba(84, 131, 233, 0.25);
+}
+
+.form-field textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+#contact-form button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 36px;
+    background: linear-gradient(135deg, #263341, #5483e9);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#contact-form button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(84, 131, 233, 0.4);
+}
+
+@media (max-width: 500px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
